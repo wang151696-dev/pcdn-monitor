@@ -1,0 +1,460 @@
+{
+  "tool": "pcdn_monitor",
+  "generated_at": "2026-11-04 00:08:55",
+  "run_seconds": 0.5,
+  "samples": 1,
+  "meta": {
+    "admin": false,
+    "interval_seconds": 2.0,
+    "window_minutes": 12
+  },
+  "totals": {
+    "upload_bytes": 0,
+    "download_bytes": 0,
+    "upload_human": "0 B",
+    "download_human": "0 B",
+    "avg_up_bps": 0.0,
+    "peak_up_bps": 0.0,
+    "avg_down_bps": 0.0,
+    "peak_down_bps": 0.0
+  },
+  "connections": {
+    "max_tcp_connections": 514,
+    "max_udp_endpoints": 37,
+    "max_public_listeners": 30,
+    "distinct_public_ips": 81,
+    "distinct_public_networks": 43,
+    "top_remote_ips": [
+      {
+        "ip": "120.220.145.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.221.208.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.222.220.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.222.220.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.221.208.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "2409:8c3c:1c00:202:3::xxxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.221.208.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "39.97.141.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "59.110.96.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.222.220.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.222.220.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.222.220.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.220.80.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.46.178.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.220.51.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "111.31.21.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.220.191.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "111.31.21.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "120.221.208.xxx",
+        "samples": 1
+      },
+      {
+        "ip": "111.31.21.xxx",
+        "samples": 1
+      }
+    ],
+    "top_remote_ports": [
+      {
+        "port": 8080,
+        "samples": 1
+      },
+      {
+        "port": 80,
+        "samples": 1
+      },
+      {
+        "port": 487,
+        "samples": 1
+      },
+      {
+        "port": 443,
+        "samples": 1
+      },
+      {
+        "port": 11111,
+        "samples": 1
+      }
+    ],
+    "listening_ports": [
+      135,
+      139,
+      445,
+      2179,
+      3389,
+      4709,
+      5040,
+      7680,
+      7890,
+      7891,
+      9090,
+      10496,
+      10497,
+      10498,
+      10501,
+      10502,
+      10505,
+      10510,
+      10872,
+      17997,
+      17999,
+      24830,
+      28894,
+      33445,
+      49853
+    ]
+  },
+  "risk": {
+    "score": 0,
+    "level": "低",
+    "note": "本评分为“疑似PCDN风险”启发式评估，不能作为确定性结论。",
+    "rules": []
+  },
+  "top_processes": [
+    {
+      "pid": 0,
+      "name": "(系统内核连接)",
+      "exe": null,
+      "username": null,
+      "max_tcp_connections": 340,
+      "max_udp_endpoints": 0,
+      "distinct_public_ips": 58,
+      "listening_ports": [],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": null
+    },
+    {
+      "pid": 13236,
+      "name": "clashmiService.exe",
+      "exe": "D:\\app安装地址\\Clash Mi\\clashmiService.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 53,
+      "max_udp_endpoints": 4,
+      "distinct_public_ips": 22,
+      "listening_ports": [
+        7890,
+        7891,
+        9090,
+        17999
+      ],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": [
+        "D:\\app安装地址\\Clash Mi\\clashmiService.exe",
+        "--service-config=C:\\Users\\华硕\\AppData\\Roaming\\clashmi\\clashmi\\service.json",
+        "--service-http-port=17999",
+        "--connected-port=17998"
+      ]
+    },
+    {
+      "pid": 12320,
+      "name": "DoubaoWork.exe",
+      "exe": "C:\\Users\\华硕\\AppData\\Local\\DoubaoWork\\Application\\app\\DoubaoWork.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 20,
+      "max_udp_endpoints": 0,
+      "distinct_public_ips": 10,
+      "listening_ports": [],
+      "path_suspicious": false,
+      "autostart": true,
+      "cmdline": [
+        "C:\\Users\\华硕\\AppData\\Local\\DoubaoWork\\Application\\app\\DoubaoWork.exe",
+        "--type=utility",
+        "--utility-sub-type=network.mojom.NetworkService",
+        "--lang=zh-CN",
+        "--service-sandbox-type=none",
+        "--enable-exception-guard-sandbox",
+        "--no-pre-read-main-dll",
+        "--smc-metadata=1916,18244737393985015985,15066668000015091158,4194304",
+        "--metrics-shmem-handle=2168,i,14117334064612464548,6695734132098187594,524288",
+        "--field-trial-handle=1896,i,5217258883350512756,13696673837909543423,262144",
+        "--enable-features=AllowSoftwareGLFallbackDueToCrashes,WebUICodeCache",
+        "--disable-features=NonBlockingOsClipboardReads",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=1924,i,3690392617234652566,9838916849053705613,4",
+        "--trace-process-track-uuid=3190708989122997041",
+        "--enable-logging=handle",
+        "--log-file=2196",
+        "--mojo-platform-channel-handle=2192",
+        "--minidump-handle=1928",
+        "--richdump-handle=2240",
+        "/prefetch:11"
+      ]
+    },
+    {
+      "pid": 12764,
+      "name": "DoubaoWork.exe",
+      "exe": "C:\\Users\\华硕\\AppData\\Local\\DoubaoWork\\Application\\app\\DoubaoWork.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 8,
+      "max_udp_endpoints": 0,
+      "distinct_public_ips": 7,
+      "listening_ports": [],
+      "path_suspicious": false,
+      "autostart": true,
+      "cmdline": [
+        "C:\\Users\\华硕\\AppData\\Local\\DoubaoWork\\Application\\app\\DoubaoWork.exe",
+        "--type=utility",
+        "--utility-sub-type=backend.mojom.Service",
+        "--lang=zh-CN",
+        "--service-sandbox-type=none",
+        "--no-pre-read-main-dll",
+        "--smc-metadata=1916,18244737393985015985,15066668000015091158,4194304",
+        "--metrics-shmem-handle=4048,i,12941537557316035468,2331209892983837549,524288",
+        "--field-trial-handle=1896,i,5217258883350512756,13696673837909543423,262144",
+        "--enable-features=AllowSoftwareGLFallbackDueToCrashes,WebUICodeCache",
+        "--disable-features=NonBlockingOsClipboardReads",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=1924,i,3690392617234652566,9838916849053705613,4",
+        "--trace-process-track-uuid=3190708992871164437",
+        "--enable-logging=handle",
+        "--log-file=4012",
+        "--mojo-platform-channel-handle=3988",
+        "/prefetch:14"
+      ]
+    },
+    {
+      "pid": 976,
+      "name": "wpscloudsvr.exe",
+      "exe": "D:\\app安装地址\\WPS Office\\12.1.0.29690\\office6\\wpscloudsvr.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 16,
+      "max_udp_endpoints": 0,
+      "distinct_public_ips": 4,
+      "listening_ports": [
+        4709,
+        33445
+      ],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": [
+        "D:\\app安装地址\\WPS Office\\12.1.0.29690\\office6\\wpscloudsvr.exe",
+        "/wpscloudlaunch",
+        "/run_plugin",
+        "/plugin_name=klocalpersonalite",
+        "/plugin_type=exe",
+        "/plugin_entry=EntryPoint",
+        "/plugin_local"
+      ]
+    },
+    {
+      "pid": 1952,
+      "name": "chrome.exe",
+      "exe": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 19,
+      "max_udp_endpoints": 2,
+      "distinct_public_ips": 0,
+      "listening_ports": [],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": [
+        "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "--type=utility",
+        "--utility-sub-type=network.mojom.NetworkService",
+        "--lang=zh-CN",
+        "--service-sandbox-type=none",
+        "--no-pre-read-main-dll",
+        "--metrics-shmem-handle=2344,i,4066587813871375641,14866083874557513617,524288",
+        "--field-trial-handle=2072,i,14044164407732449764,16678355981930668711,262144",
+        "--variations-seed-version=20261103-010033.709000-production",
+        "--pseudonymization-salt-handle=1964,i,17525115396694644605,10015361962795491354,4",
+        "--trace-process-track-uuid=3190708989122997041",
+        "--mojo-platform-channel-handle=2356",
+        "/prefetch:11"
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "System",
+      "exe": "",
+      "username": "NT AUTHORITY\\SYSTEM",
+      "max_tcp_connections": 5,
+      "max_udp_endpoints": 6,
+      "distinct_public_ips": 0,
+      "listening_ports": [
+        139,
+        445
+      ],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": []
+    },
+    {
+      "pid": 8548,
+      "name": "ImeService.exe",
+      "exe": "C:\\Program Files\\DoubaoIME\\versions\\v0.9.2.7\\ImeService.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 4,
+      "max_udp_endpoints": 1,
+      "distinct_public_ips": 0,
+      "listening_ports": [],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": [
+        "C:\\Program Files\\DoubaoIME\\versions\\v0.9.2.7\\ImeService.exe"
+      ]
+    },
+    {
+      "pid": 10080,
+      "name": "opencode.exe",
+      "exe": "C:\\Users\\华硕\\AppData\\Roaming\\npm\\node_modules\\@opencode\\cli\\bin\\opencode.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 4,
+      "max_udp_endpoints": 0,
+      "distinct_public_ips": 0,
+      "listening_ports": [
+        28894
+      ],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": [
+        "C:\\Users\\华硕\\AppData\\Roaming\\npm\\node_modules\\@opencode\\cli\\bin\\opencode.exe",
+        "serve",
+        "--service"
+      ]
+    },
+    {
+      "pid": 20712,
+      "name": "ZCode.exe",
+      "exe": "C:\\Program Files\\ZCode\\ZCode.exe",
+      "username": "DESKTOP-H9DTGHI\\华硕",
+      "max_tcp_connections": 3,
+      "max_udp_endpoints": 0,
+      "distinct_public_ips": 0,
+      "listening_ports": [],
+      "path_suspicious": false,
+      "autostart": false,
+      "cmdline": [
+        "C:\\Program Files\\ZCode\\ZCode.exe",
+        "--type=utility",
+        "--utility-sub-type=network.mojom.NetworkService",
+        "--lang=zh-CN",
+        "--service-sandbox-type=none",
+        "--user-data-dir=C:\\Users\\华硕\\AppData\\Roaming\\ZCode",
+        "--standard-schemes=zcode-media,zcode-sandbox,zcode-html",
+        "--secure-schemes=zcode-media,zcode-sandbox,zcode-html",
+        "--cors-schemes=zcode-html",
+        "--fetch-schemes=zcode-sandbox,zcode-html",
+        "--streaming-schemes=zcode-media",
+        "--field-trial-handle=2088,i,16541311693942607279,3456063564979533101,262144",
+        "--enable-features=AllowWindowCaptureExclusionInRemoteSessions,PdfUseShowSaveFilePicker",
+        "--disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2100,i,1140300039857444867,14127872586670067702,4",
+        "--trace-process-track-uuid=3190708989122997041",
+        "--mojo-platform-channel-handle=2248",
+        "/prefetch:11"
+      ]
+    }
+  ],
+  "whitelist_hits": [],
+  "rules_config": {
+    "sustained_upload": {
+      "mbps": 1.0,
+      "minutes": 10,
+      "points": 20
+    },
+    "upload_ratio": {
+      "ratio": 2.0,
+      "min_upload_mbytes": 10,
+      "points": 15
+    },
+    "many_public_ips": {
+      "distinct_ips": 100,
+      "points": 15
+    },
+    "dispersed_networks": {
+      "distinct_networks": 50,
+      "points": 10
+    },
+    "dispersed_ports": {
+      "distinct_ports": 200,
+      "points": 10
+    },
+    "udp_anomaly": {
+      "udp_endpoints": 150,
+      "points": 10
+    },
+    "process_many_conns": {
+      "connections": 80,
+      "points": 10
+    },
+    "public_listeners": {
+      "ports": 3,
+      "points": 5
+    },
+    "suspicious_path": {
+      "min_connections": 3,
+      "points": 10
+    },
+    "autostart_activity": {
+      "min_connections": 20,
+      "points": 5
+    }
+  },
+  "limitations": [
+    "本报告为“疑似PCDN风险”启发式评估，不能作为确定性结论，请人工复核。",
+    "psutil 无法精确统计每个进程的字节数流量：进程级数据仅为连接行为统计，上传/下载速率来自网卡计数器，二者不一一对应。",
+    "仅采集流量与连接元数据，不记录任何数据包内容；数据只保存在本机。"
+  ],
+  "suggestions": [
+    "复核 top_processes 中命令行与安装路径是否为已知软件。",
+    "用资源监视器/任务管理器观察可疑进程的磁盘与网络行为。",
+    "如需五元组级字节统计，可启用第二阶段 pktmon/tshark 抓包（仅元数据）。",
+    "确认后再人工处理；本工具不会自动结束进程或修改系统设置。"
+  ]
+}

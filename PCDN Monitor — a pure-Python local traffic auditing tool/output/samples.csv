@@ -1,0 +1,3 @@
+﻿time,up_bps,down_bps,up_bytes_session,down_bytes_session,tcp,udp,public_ips,public_networks,public_listeners,unknown_pid_conns,score,level
+2026-11-04 00:08:54,0.0,0.0,0,0,514,37,81,43,30,0,,
+2026-11-04 00:08:56,35012.8,177303.3,8772,44421,514,35,81,43,30,0,,

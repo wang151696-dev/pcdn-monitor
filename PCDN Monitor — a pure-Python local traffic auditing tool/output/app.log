@@ -1,0 +1,6 @@
+2026-11-03 00:31:35,467 INFO pcdn.main: pcdn_monitor 启动 interval=2.0s 输出目录=C:\Users\华硕\Desktop\pcdn_monitor\output 管理员=False
+2026-11-03 00:31:35,467 WARNING pcdn.main: 非管理员权限：部分系统进程的连接可能无法归属到进程（显示为未知PID连接）
+2026-11-03 00:31:59,959 INFO pcdn.main: pcdn_monitor 启动 interval=2.0s 输出目录=C:\Users\华硕\Desktop\pcdn_monitor\output 管理员=False
+2026-11-03 00:31:59,959 WARNING pcdn.main: 非管理员权限：部分系统进程的连接可能无法归属到进程（显示为未知PID连接）
+2026-11-04 00:08:54,725 INFO pcdn.main: pcdn_monitor 启动 interval=2.0s 输出目录=E:\重装电脑系统备份\pcdn监控脚本_纯 Python 写的本机流量审计工具\output 管理员=False
+2026-11-04 00:08:54,726 WARNING pcdn.main: 非管理员权限：部分系统进程的连接可能无法归属到进程（显示为未知PID连接）

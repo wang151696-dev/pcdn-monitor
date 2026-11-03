@@ -1,0 +1,76 @@
+{
+  "interval_seconds": 2.0,
+  "eval_every_seconds": 10,
+  "window_minutes": 12,
+  "consecutive_cycles": 3,
+  "mask_public_ips": true,
+  "include_cmdline": true,
+  "log_level": "INFO",
+  "score_levels": { "low_max": 29, "suspicious_max": 59, "high_max": 79 },
+  "network": {
+    "ignore_nics": [],
+    "count_virtual_nics": false,
+    "virtual_nic_patterns": [
+      "loopback", "hyper-v", "vethernet", "vmware", "virtualbox", "vagrant",
+      "wsl", "tailscale", "zerotier", "openvpn", "wireguard", "tap-", "tun",
+      "bluetooth", "wi-fi direct", "isatap", "teredo", "microsoft km-test",
+      "wan miniport", "npcap", "npf"
+    ]
+  },
+  "suspicious_path_patterns": [
+    "\\temp\\", "\\tmp\\", "\\windows\\temp\\", "\\appdata\\local\\temp\\", "\\cache\\"
+  ],
+  "rules": {
+    "sustained_upload": { "mbps": 1.0, "minutes": 10, "points": 20 },
+    "upload_ratio": { "ratio": 2.0, "min_upload_mbytes": 10, "points": 15 },
+    "many_public_ips": { "distinct_ips": 100, "points": 15 },
+    "dispersed_networks": { "distinct_networks": 50, "points": 10 },
+    "dispersed_ports": { "distinct_ports": 200, "points": 10 },
+    "udp_anomaly": { "udp_endpoints": 150, "points": 10 },
+    "process_many_conns": { "connections": 80, "points": 10 },
+    "public_listeners": { "ports": 3, "points": 5 },
+    "suspicious_path": { "min_connections": 3, "points": 10 },
+    "autostart_activity": { "min_connections": 20, "points": 5 }
+  },
+  "whitelist": [
+    { "name": "onedrive.exe", "weight": 0.3, "reason": "云盘同步" },
+    { "name": "dropbox.exe", "weight": 0.3, "reason": "云盘同步" },
+    { "name": "baidunetdisk.exe", "weight": 0.3, "reason": "网盘同步" },
+    { "name": "googledrivesync.exe", "weight": 0.3, "reason": "云盘同步" },
+    { "name": "nutstore.exe", "weight": 0.3, "reason": "云盘同步" },
+    { "name": "obs64.exe", "weight": 0.3, "reason": "直播推流" },
+    { "name": "qbittorrent.exe", "weight": 0.3, "reason": "BT下载" },
+    { "name": "utorrent.exe", "weight": 0.3, "reason": "BT下载" },
+    { "name": "bitcomet.exe", "weight": 0.3, "reason": "BT下载" },
+    { "name": "transmission-qt.exe", "weight": 0.3, "reason": "BT下载" },
+    { "name": "tailscale-ipn.exe", "weight": 0.2, "reason": "组网VPN" },
+    { "name": "tailscaled.exe", "weight": 0.2, "reason": "组网VPN" },
+    { "name": "zerotier one.exe", "weight": 0.2, "reason": "组网VPN" },
+    { "name": "clash.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "clashmiService.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "clash-verge.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "clash-verge-service.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "verge-mihomo.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "mihomo.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "v2ray.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "xray.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "sing-box.exe", "weight": 0.3, "reason": "代理客户端" },
+    { "name": "shadowsocks.exe", "weight": 0.3, "reason": "代理客户端" }
+  ],
+  "notify": {
+    "enabled": true,
+    "min_level": "高",
+    "sustain_minutes": 5,
+    "cooldown_minutes": 10,
+    "beep": true
+  },
+  "output": {
+    "dir": "output",
+    "samples_csv": "samples.csv",
+    "alerts_jsonl": "alerts.jsonl",
+    "report_json": "report.json",
+    "log_file": "app.log",
+    "report_every_minutes": 5,
+    "alert_min_level": "可疑"
+  }
+}
